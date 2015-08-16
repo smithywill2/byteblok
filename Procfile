@@ -1,1 +1,1 @@
-web: gunicorn byteblok.wsgi --log-file -
+web: gunicorn byteblok.wsgi:application --log-file -
