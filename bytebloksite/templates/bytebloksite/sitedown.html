@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static from staticfiles %}
+
     <meta charset="UTF-8">
     <title>ByteBlok</title>
+    <link rel="shortcut icon" href="{% static 'bytebloksite/images/favicon.ico' %}">
 </head>
 <body>
 {% load static from staticfiles %}
@@ -12,14 +15,23 @@
 
 <div class="sitedowncontent">
 
-    <h1 id="logo">ByteBlok</h1>
+    <img src="{% static 'bytebloksite/images/logo.png' %}">
 
     <p>This site is currently in development.</p>
 
     <p>Please come back later.</p>
 
-    <img src="{% static 'bytebloksite/images/sadFace.jpeg' %}">
+
+    <footer id="footer">
+
+    <p style="font-size:60%">Block graphic by <a href="http://www.freepik.com/">Freepik</a> from <a href="http://www.flaticon.com/">Flaticon</a> is licensed under
+        <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></p>
+    </footer>
+
+
+
 </div>
 
 </body>
+
 </html>
