@@ -1,1 +1,1 @@
-web:python manage.py collectstatic --noinput ; gunicorn byteblok.wsgi:application --log-file -
+web: ./manage.py collectstatic --noinput ; gunicorn byteblok.wsgi:application --log-file -
