@@ -25,8 +25,6 @@ SECRET_KEY = 'w31p_8x+r=ocza=c$(qg78sp!$t%i%ar68mju053v2z)yz2$th'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -111,7 +109,7 @@ DATABASES['default'] =  dj_database_url.config()
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Allow all host headers
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['localhost','www.byteblok.com']
 
 # Static asset configuration
 import os
