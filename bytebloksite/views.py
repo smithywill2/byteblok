@@ -6,8 +6,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.shortcuts import render_to_response
 
-def index(request):
-    return HttpResponse("Hello, world. You're at the polls index.")
+def home(request):
+        return render_to_response ("bytebloksite/home.html")
 
 def sitedown(request):
         return render_to_response ("bytebloksite/sitedown.html")

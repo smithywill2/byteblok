@@ -21,7 +21,9 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^$','bytebloksite.views.sitedown',name='sitedown')
+    url(r'^$','bytebloksite.views.sitedown',name='sitedown'),
+    url(r'^home/','bytebloksite.views.home',name='home')
+
 ]
 
 
