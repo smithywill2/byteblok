@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static from staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'bytebloksite/style.css' %}" />
+
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}  - ByteBlok </title>
+</head>
+<body>
+
+    <img src="{% static 'bytebloksite/images/logo.png' %}">
+
+    <div id="content">
+        {% block content %} {% endblock %}
+    </div>
+
+</body>
+</html>
