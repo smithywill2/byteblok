@@ -11,3 +11,6 @@ def home(request):
 
 def sitedown(request):
         return render_to_response ("bytebloksite/sitedown.html")
+
+def dev(request):
+        return render_to_response ("bytebloksite/dev.html")
